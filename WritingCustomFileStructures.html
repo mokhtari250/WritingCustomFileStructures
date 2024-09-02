@@ -1,0 +1,22 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main(){
+
+    ofstream theFile("players.txt");
+
+    cout << "Enters playrs ID, Name, and Money" << endl;
+    cout << "press Ctrl+Z to quit\n" << emdl;
+
+    int idNumber;
+    string name;
+    double money;
+
+    while(cin >> idNumber >> name >> money){
+        theFile << idNumber << ' ' << name << ' ' << money << endl;
+    }
+
+}
+
+
